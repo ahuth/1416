@@ -44,6 +44,7 @@ function getContentFactory(current: Current, actions: Actions, latestSectionRef:
           <section key={id} ref={active ? latestSectionRef : undefined}>
             <p>Entry</p>
             <button disabled={!active} onClick={actions.goNorth}>Go north</button>
+            <br />
             <button disabled={!active} onClick={actions.goWest}>Go west</button>
             <button disabled={!active} onClick={actions.goEast}>Go east</button>
           </section>
@@ -60,6 +61,7 @@ function getContentFactory(current: Current, actions: Actions, latestSectionRef:
           <section key={id} ref={active ? latestSectionRef : undefined}>
             <p>Dining</p>
             <button disabled={!active} onClick={actions.goEast}>Go east</button>
+            <br />
             <button disabled={!active} onClick={actions.goSouth}>Go south</button>
           </section>
         );
@@ -83,8 +85,10 @@ function getContentFactory(current: Current, actions: Actions, latestSectionRef:
           <section key={id} ref={active ? latestSectionRef : undefined}>
             <p>Bedrooms entry</p>
             <button disabled={!active} onClick={actions.goNorth}>Go north</button>
+            <br />
             <button disabled={!active} onClick={actions.goWest}>Go west</button>
             <button disabled={!active} onClick={actions.goEast}>Go east</button>
+            <br />
             <button disabled={!active} onClick={actions.goSouth}>Go south</button>
           </section>
         );
@@ -107,6 +111,7 @@ function getContentFactory(current: Current, actions: Actions, latestSectionRef:
           <section key={id} ref={active ? latestSectionRef : undefined}>
             <p>Master bedroom</p>
             <button disabled={!active} onClick={actions.goEast}>Go east</button>
+            <br />
             <button disabled={!active} onClick={actions.goSouth}>Go south</button>
           </section>
         );
@@ -122,6 +127,7 @@ function getContentFactory(current: Current, actions: Actions, latestSectionRef:
           <section key={id} ref={active ? latestSectionRef : undefined}>
             <p>Master closets</p>
             <button disabled={!active} onClick={actions.goNorth}>Go north</button>
+            <br />
             <button disabled={!active} onClick={actions.goSouth}>Go south</button>
           </section>
         );
